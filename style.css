@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 20rem;
+    height: 33rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    box-shadow: 10px 5px 30px #000;
+}
+/*Imagen*/
+.card .nft-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.ntf-container-img{
+    position: relative;
+}
+.ntf-container-img .overlay{
+    position: absolute;
+    background-color: hsl(178, 100%, 50%,40%);
+    top: 0;
+    width: 100%;
+    height: 99%;
+    opacity: 0;
+}
+
+.ntf-container-img .overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.ntf-container-img .overlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*texto */
+.text-inf h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.text-inf h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.text-inf p{
+    color: hsl(215, 51%, 70%);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 24px;
+}
+/*reloj y eth*/
+.icon-inf{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.eth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-inf .eth-text{
+    color: hsl(178, 100%, 50%);
+    margin: 5px;
+    text-align: center;
+}
+.text-clock{
+    margin: 5px;
+    text-align: center;
+    color: hsl(215, 51%, 70%);
+}
+
+/*Creador info*/
+.avatar-container{
+    width: 17.5rem;
+    border-top: solid 1px hsl(215, 51%, 70%);
+
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+}
+
+.avatar-container .avatar {
+    width: 30px;
+    position: relative;
+    top: 5px;
+    border-radius: 100%;
+    border: solid 1px #fff;
+}
+.avatar-container .text-avatar{
+    position: relative;
+    top: 5px;
+    padding: 14px;
+    text-align: center;
+    color: rgb(139, 172, 218);
+    font-size: 1rem;
+}
+
+.avatar-container .text-avatar span{
+    color: #fff;
+}
+.avatar-container .text-avatar span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
